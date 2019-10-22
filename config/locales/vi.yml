@@ -1,0 +1,39 @@
+vi:
+  layouts:
+    application:
+      title: "Hướng dẫn Sample App Ruby on Rails"
+      vietnamese: "Tiếng Việt"
+      english: "Tiếng Anh"
+  static_pages:
+    home:
+      home: "Trang chủ"
+      sample_app: "Ứng dụng đơn giản"
+      content1: "Đây là trang chủ của "
+      content2: "Ruby on Rails Tutorial"
+      content3: " ứng dụng đơn giản."
+    help:
+      help: "Trợ giúp"
+      content1: "Nhận trợ giúp Ruby on Rails Tutorial tại "
+      content2: "phần giúp đỡ Rails Tutorial"
+      content3: "Để được trợ giúp trong quá trình làm Sample App, hãy xem cuốn
+        sách"
+      content4: "Ruby on Rails Tutorial."
+      content5: ""
+    about:
+      about: "Giới thiệu"
+      content1: ""
+      content2: "Ruby on Rails Tutorial"
+      content3: " - một phần của tập hợp các hướng dẫn "
+      content4: "Learn Enough"
+      content5: ", là một "
+      content6: "cuốn sách "
+      content7: "đồng thời là"
+      content8: " series"
+      content9: " dạy phát triển web bằng "
+      content10: "Ruby on Rails"
+      content11: ". Đây là ứng dụng mẫu cho hướng dẫn này."
+    contact:
+      contact: "Liên hệ"
+      content1: "Có bất kì thắc mắc, đóng góp gì về ứng dụng mẫu hãy liên lạc
+        với Ruby on Rails Tutorial qua "
+      content2: "trang liên hệ."
