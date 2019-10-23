@@ -1,0 +1,10 @@
+<% provide :title, t(".help") %>
+<h1><%= t".help" %></h1>
+<p>
+  <%= t ".content1" %>
+  <%= link_to t(".content2"), Settings.link8 %>.
+  <%= t ".content3" %>
+  <%= link_to Settings.link9 do %>
+    <em><%= t ".content4" %></em><%= t ".content5" %>
+  <% end %>
+</p>

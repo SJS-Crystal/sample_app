@@ -1,33 +1,37 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+      vietnamese: "Vietnamese"
+      english: "English"
+  static_pages:
+    home:
+      home: "Home"
+      sample_app: "Sample App"
+      content1: "This is the home page for the"
+      content2: "Ruby on Rails Tutorial"
+      content3: "sample application."
+    help: 
+      help: "Help"
+      content1: "Get help on the Ruby on Rails Tutorial at the"
+      content2: "Rails Tutorial help section"
+      content3: "To get help on this sample app, see the"
+      content4: "Ruby on Rails Tutorial "
+      content5: "book."
+    about:
+      about: "About"
+      content1: "The "
+      content2: "Ruby on Rails Tutorial"
+      content3: "part of the"
+      content4: "Learn Enough"
+      content5: "family of tutorials, is a"
+      content6: "book "
+      content7: "and"
+      content8: "screencast series "
+      content9: "to teach web development with "
+      content10: "Ruby on Rails"
+      content11: ". This is the sample app for the tutorial."
+    contact:
+      contact: "Contact"
+      content1: Contact the Ruby on Rails Tutorial about the sample app at the
+      content2: "contact page."
