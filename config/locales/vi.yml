@@ -2,15 +2,29 @@ vi:
   layouts:
     application:
       title: "Hướng dẫn Sample App Ruby on Rails"
+    header:
+      english: "English"
       vietnamese: "Tiếng Việt"
-      english: "Tiếng Anh"
+      sample_app: "sample_app"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+    footer:
+      the: ""
+      ruby_on_rails_tutorial: "Hướng dẫn về Ruby on Rails"
+      by: " của "
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+      news: "Tin tức"
   static_pages:
     home:
       home: "Trang chủ"
-      sample_app: "Ứng dụng đơn giản"
+      sample_app: "Chào mừng đến với Sample App"
       content1: "Đây là trang chủ của "
       content2: "Ruby on Rails Tutorial"
       content3: " ứng dụng đơn giản."
+      sign_up: "Đăng kí ngay!"
+      rails_logo: "Rails logo"
     help:
       help: "Trợ giúp"
       content1: "Nhận trợ giúp Ruby on Rails Tutorial tại "
@@ -37,3 +51,7 @@ vi:
       content1: "Có bất kì thắc mắc, đóng góp gì về ứng dụng mẫu hãy liên lạc
         với Ruby on Rails Tutorial qua "
       content2: "trang liên hệ."
+  users:
+    new:
+      sign_up: "Đăng kí"
+      content_sign_up: "Đây là trang đăng kí cho người dùng mới."
