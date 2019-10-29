@@ -53,3 +53,20 @@ en:
     new:
       sign_up: "Sign Up"
       content_sign_up: "This will be a signup page for new users."
+      name_label: "Name"
+      email_label: "Email"
+      password_label: "Password"
+      password_confirmation_label: "Confirmation"
+      create_my_account: "Create my account"
+    show:
+      id_unexist: "The id unexist!"
+    create:
+      welcome_user: "Welcome to the Sample App!"
+  shared:
+    error_messages:
+      error: "error"
+      content_error: "The form contains"
+  activerecord:
+    attributes:
+      user:
+        password_confirmation: Confirmation
