@@ -10,3 +10,6 @@ link9: "https://www.railstutorial.org/book"
 link10: "http://news.railstutorial.org/"
 link11: "http://www.michaelhartl.com/"
 image1: "rails.png"
+name_in_users_max: 50
+email_in_users_max: 255
+password_min: 6
