@@ -13,3 +13,5 @@ image1: "rails.png"
 name_in_users_max: 50
 email_in_users_max: 255
 password_min: 6
+size_avatar_default: 80
+size_avatar: 100

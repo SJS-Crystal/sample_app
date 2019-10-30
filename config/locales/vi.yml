@@ -1,57 +1,84 @@
 vi:
   layouts:
     application:
-      title: "Hướng dẫn Sample App Ruby on Rails"
+      title: Hướng dẫn Sample App Ruby on Rails
     header:
-      english: "English"
-      vietnamese: "Tiếng Việt"
-      sample_app: "sample_app"
-      home: "Trang chủ"
-      help: "Trợ giúp"
-      log_in: "Đăng nhập"
+      english: English
+      vietnamese: Tiếng Việt
+      sample_app: sample_app
+      home: Trang chủ
+      help: Trợ giúp
+      log_in: Đăng nhập
     footer:
       the: ""
-      ruby_on_rails_tutorial: "Hướng dẫn về Ruby on Rails"
+      ruby_on_rails_tutorial: Hướng dẫn về Ruby on Rails
       by: " của "
-      about: "Giới thiệu"
-      contact: "Liên hệ"
-      news: "Tin tức"
+      about: Giới thiệu
+      contact: Liên hệ
+      news: Tin tức
   static_pages:
     home:
-      home: "Trang chủ"
-      sample_app: "Chào mừng đến với Sample App"
-      content1: "Đây là trang chủ của "
-      content2: "Ruby on Rails Tutorial"
+      home: Trang chủ
+      sample_app: Chào mừng đến với Sample App
+      content1: Đây là trang chủ của 
+      content2: Ruby on Rails Tutorial
       content3: " ứng dụng đơn giản."
-      sign_up: "Đăng kí ngay!"
-      rails_logo: "Rails logo"
+      sign_up: Đăng kí ngay!
+      rails_logo: Rails logo
     help:
-      help: "Trợ giúp"
+      help: Trợ giúp
       content1: "Nhận trợ giúp Ruby on Rails Tutorial tại "
-      content2: "phần giúp đỡ Rails Tutorial"
+      content2: phần giúp đỡ Rails Tutorial
       content3: "Để được trợ giúp trong quá trình làm Sample App, hãy xem cuốn
         sách"
-      content4: "Ruby on Rails Tutorial."
+      content4: Ruby on Rails Tutorial.
       content5: ""
     about:
-      about: "Giới thiệu"
+      about: Giới thiệu
       content1: ""
-      content2: "Ruby on Rails Tutorial"
+      content2: Ruby on Rails Tutorial
       content3: " - một phần của tập hợp các hướng dẫn "
-      content4: "Learn Enough"
+      content4: Learn Enough
       content5: ", là một "
       content6: "cuốn sách "
-      content7: "đồng thời là"
+      content7: đồng thời là
       content8: " series"
       content9: " dạy phát triển web bằng "
-      content10: "Ruby on Rails"
+      content10: Ruby on Rails
       content11: ". Đây là ứng dụng mẫu cho hướng dẫn này."
     contact:
-      contact: "Liên hệ"
+      contact: Liên hệ
       content1: "Có bất kì thắc mắc, đóng góp gì về ứng dụng mẫu hãy liên lạc
         với Ruby on Rails Tutorial qua "
-      content2: "trang liên hệ."
+      content2: trang liên hệ.
   users:
     new:
-      sign_up: "Đăng kí"
-      content_sign_up: "Đây là trang đăng kí cho người dùng mới."
+      sign_up: Đăng kí
+      content_sign_up: Đây là trang đăng kí cho người dùng mới.
+      name_label: Tên
+      email_label: Email
+      password_label: Mật khẩu
+      password_confirmation_label: Xác nhận mật khẩu
+      create_my_account: Tạo tài khoản
+    show:
+      id_unexist: Id không tồn tại!
+    create:
+      welcome_user: Chào mừng đến với Sample App!
+  shared:
+    error_messages:
+      error: lỗi
+      content_error: Biểu mẫu chứa
+  activerecord:
+    attributes:
+      user:
+        name: Tên
+        email: Email
+        password: Mật khẩu
+        password_confirmation: Xác nhận mật khẩu
+        submit: 
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: không thể để trắng
