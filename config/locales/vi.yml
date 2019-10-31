@@ -9,6 +9,11 @@ vi:
       home: Trang chủ
       help: Trợ giúp
       log_in: Đăng nhập
+      users: Người dùng
+      account: Tài khoản
+      profile: Hồ sơ
+      settings: Cài đặt
+      log_out: Đăng xuất
     footer:
       the: ""
       ruby_on_rails_tutorial: Hướng dẫn về Ruby on Rails
@@ -55,11 +60,6 @@ vi:
     new:
       sign_up: Đăng kí
       content_sign_up: Đây là trang đăng kí cho người dùng mới.
-      name_label: Tên
-      email_label: Email
-      password_label: Mật khẩu
-      password_confirmation_label: Xác nhận mật khẩu
-      create_my_account: Tạo tài khoản
     show:
       id_unexist: Id không tồn tại!
     create:
@@ -71,14 +71,32 @@ vi:
   activerecord:
     attributes:
       user:
-        name: Tên
-        email: Email
-        password: Mật khẩu
         password_confirmation: Xác nhận mật khẩu
-        submit: 
     errors:
       models:
         user:
           attributes:
             name:
               blank: không thể để trắng
+  sessions:
+    new:
+      sign_up: Đăng kí ngay!
+      log_in: "Đăng nhập"
+      new_user: "Chưa có tài khoản"
+    create:
+      invalid_credentials: email hoặc mật khẩu không đúng
+  helpers:
+    label:
+      user:
+        name: Tên
+        email: Email
+        password: Mật khẩu
+        password_confirmation: Xác nhận mật khẩu
+      session:
+        email: "Email"
+        password: "Mật khẩu"
+    submit:
+      user:
+        create: Tạo tài khoản
+      session:
+        submit: Đăng nhập
