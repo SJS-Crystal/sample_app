@@ -72,7 +72,6 @@ en:
       sign_up: Sign up now!
       log_in: Log in
       new_user: New User
-      remember_text: Remember me on this computer
     create:
       invalid_credentials: Invalid email/password combination
   helpers:
