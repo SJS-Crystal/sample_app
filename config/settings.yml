@@ -15,4 +15,3 @@ email_in_users_max: 255
 password_min: 6
 size_avatar_default: 80
 size_avatar: 100
-remember_value: "1"
