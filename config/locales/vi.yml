@@ -83,6 +83,7 @@ vi:
       sign_up: Đăng kí ngay!
       log_in: "Đăng nhập"
       new_user: "Chưa có tài khoản"
+      remember_text: Duy trì trạng thái đăng nhập
     create:
       invalid_credentials: email hoặc mật khẩu không đúng
   helpers:
