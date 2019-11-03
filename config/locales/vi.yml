@@ -91,26 +91,30 @@ vi:
     error_messages:
       error: lỗi
       content_error: Biểu mẫu chứa
-  activerecord:
-    attributes:
-      user:
-        password_confirmation: Xác nhận mật khẩu
-    errors:
-      models:
-        user:
-          attributes:
-            name:
-              blank: không thể để trắng
   sessions:
     new:
       sign_up: Đăng kí ngay!
       log_in: Đăng nhập
       new_user: Chưa có tài khoản
       remember_text: Duy trì trạng thái đăng nhập
+      forgot_password: (Quên mật khẩu)
     create:
       invalid_credentials: Email hoặc mật khẩu không đúng!
       check_your_email: Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email
         để kích hoạt tài khoản của bạn.
+  password_resets:
+    create:
+      notice_sent_reset_password_instructions: Một email đã được gửi đến địa
+        chỉ email của bạn, chứa hướng dẫn đặt lại mật khẩu
+      email_address_not_found: Địa chỉ email chưa được đăng kí!
+    update:
+      cant_be_empty: Không được trống
+      password_has_been_reset: Mật khẩu đã được đặt lại.
+    edit:
+      password_reset_has_expired: Thời gian đặt lại mật khẩu đã hết hạn.
+      reset_password: Thiết lập lại mật khẩu
+    new:
+      forgot_password: Quên mật khẩu
   helpers:
     label:
       user:
@@ -127,11 +131,35 @@ vi:
         update: Lưu thay đổi
       session:
         submit: Đăng nhập
+      password_reset:
+        submit: Tiếp tục
   user_mailer:
-    account_activation: Kích hoạt tài khoản
+    account_activation_subject: Kích hoạt tài khoản
     account_activation:
+      h1: Sample App
       greeting: Chào
-      content_mail: "Chào mừng đến với Sample App! Nhấn vào link dưới để
-        kích hoạt tài khoản của bạn: "
-      content_h1_mail: Sample App
+      content_mail: "Chào mừng đến với Sample App! Nhấn vào link dưới để kích
+        hoạt tài khoản của bạn: "
       activate: Kích hoạt
+    password_reset_subject: Thiết lập mật khẩu
+    password_reset:
+      h1: Thiết lập mật khẩu
+      p1_password_reset: "Để đặt lại mật khẩu của bạn hãy click vào link dưới: "
+      reset_password: Đặt lại mật khẩu
+      p2_password_reset: Link này hết hạn trong 2 giờ.
+      p3_password_reset: Nếu bạn không yêu cầu đặt lại mật khẩu hãy bỏ qua
+        email này, mật khẩu của bạn không thay đổi.
+  activerecord:
+    attributes:
+      user:
+        name: Tên
+        email: Email
+        password: Mật khẩu
+        password_confirmation: Xác nhận mật khẩu
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: không thể để trắng
+  email_address_not_found: Địa chỉ email chưa được đăng kí!

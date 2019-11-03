@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
     else
       message = t ".check_your_email"
       flash[:warning] = message
-      redirect_to root_url
+      redirect_to root_path
     end
   end
 end

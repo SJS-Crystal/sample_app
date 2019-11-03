@@ -95,10 +95,24 @@ en:
       log_in: Log in
       new_user: New User
       remember_text: Remember me on this computer
+      forgot_password: (Forgot password)
     create:
       invalid_credentials: Invalid email/password combination!
       check_your_email: Account not activated. Check your email for the
         activation link.
+  password_resets:
+    create:
+      notice_sent_reset_password_instructions: Email sent with password reset
+        instructions
+      email_address_not_found: Email address not found
+    update:
+      cant_be_empty: can't be empty
+      password_has_been_reset: Password has been reset.
+    edit:
+      password_reset_has_expired: Password reset has expired.
+      reset_password: Reset password
+    new:
+      forgot_password: Forgot password
   helpers:
     label:
       user:
@@ -109,11 +123,22 @@ en:
         update: Save changes
       session:
         submit: Log in
+      password_reset:
+        submit: Submit
   user_mailer:
-    account_activation: Account activation
+    account_activation_subject: Account activation
     account_activation:
+      h1: Sample App
       greeting: Hi
       content_mail: "Welcome to the Sample App! Click on the link below to
         activate your account: "
-      content_h1_mail: Sample App
       activate: Activate
+    password_reset_subject: Password reset
+    password_reset:
+      h1: Password reset
+      p1_password_reset: "To reset your password click the link below:"
+      reset_password: Reset password
+      p2_password_reset: This link will expire in two hours.
+      p3_password_reset: If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is.
+  email_address_not_found: Email address not found

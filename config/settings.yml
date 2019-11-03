@@ -24,3 +24,4 @@ username_email_customer_faker: example-
 domain_email_faker: railstutorial.org
 password_customer_faker: password
 host: localhost:3000
+timeout_reset_password: 2
