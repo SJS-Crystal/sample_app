@@ -50,20 +50,38 @@ vi:
       content8: " series"
       content9: " dạy phát triển web bằng "
       content10: Ruby on Rails
-      content11: ". Đây là ứng dụng mẫu cho hướng dẫn này."
+      content11: . Đây là ứng dụng mẫu cho hướng dẫn này.
     contact:
       contact: Liên hệ
       content1: "Có bất kì thắc mắc, đóng góp gì về ứng dụng mẫu hãy liên lạc
         với Ruby on Rails Tutorial qua "
       content2: trang liên hệ.
   users:
+    id_unexist: ID không tồn tại!
+    please_log_in: Vui lòng đăng nhập
+    not_allow: Bạn không được phép
     new:
       sign_up: Đăng kí
       content_sign_up: Đây là trang đăng kí cho người dùng mới.
-    show:
-      id_unexist: Id không tồn tại!
     create:
       welcome_user: Chào mừng đến với Sample App!
+    update:
+      profile_updated: Hồ sơ đã được cập nhật
+    user:
+      you_sure?: Bạn có chắc chắn không?
+      delete: Xóa
+    destroy:
+      user_deleted: Người dùng đã được xóa
+      user_delete_fail: Xóa thất bại
+    index:
+      all_users: Danh sách người dùng
+    edit:
+      edit_user: Chỉnh sửa người dùng
+      update_your_profile: Cập nhật hồ sơ của bạn
+      change: Đổi thay
+  will_paginate:
+    next_label: Trang sau
+    previous_label: Trang trước
   shared:
     error_messages:
       error: lỗi
@@ -81,11 +99,11 @@ vi:
   sessions:
     new:
       sign_up: Đăng kí ngay!
-      log_in: "Đăng nhập"
-      new_user: "Chưa có tài khoản"
+      log_in: Đăng nhập
+      new_user: Chưa có tài khoản
       remember_text: Duy trì trạng thái đăng nhập
     create:
-      invalid_credentials: email hoặc mật khẩu không đúng
+      invalid_credentials: Email hoặc mật khẩu không đúng!
   helpers:
     label:
       user:
@@ -94,10 +112,11 @@ vi:
         password: Mật khẩu
         password_confirmation: Xác nhận mật khẩu
       session:
-        email: "Email"
-        password: "Mật khẩu"
+        email: Email
+        password: Mật khẩu
     submit:
       user:
         create: Tạo tài khoản
+        update: Lưu thay đổi
       session:
         submit: Đăng nhập

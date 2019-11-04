@@ -1,72 +1,90 @@
 en:
   layouts:
     application:
-      title: "Ruby on Rails Tutorial Sample App"
+      title: Ruby on Rails Tutorial Sample App
     header:
-      english: "English"
-      vietnamese: "Tiếng Việt"
-      sample_app: "sample_app"
-      home: "Home"
-      help: "Help"
-      log_in: "Log in"
+      english: English
+      vietnamese: Tiếng Việt
+      sample_app: sample_app
+      home: Home
+      help: Help
+      log_in: Log in
       users: Users
       account: Account
       profile: Profile
       settings: Settings
-      log_out: "Log out"
+      log_out: Log out
     footer:
       the: "The "
-      ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
+      ruby_on_rails_tutorial: Ruby on Rails Tutorial
       by: " by "
-      about: "About"
-      contact: "Contact"
-      news: "News"
+      about: About
+      contact: Contact
+      news: News
   static_pages:
     home:
-      home: "Home"
-      sample_app: "Welcome to the Sample App"
-      content1: "This is the home page for the"
-      content2: "Ruby on Rails Tutorial"
-      content3: "sample application."
-      sign_up: "Sign up now!"
-      rails_logo: "Rails logo"
+      home: Home
+      sample_app: Welcome to the Sample App
+      content1: This is the home page for the
+      content2: Ruby on Rails Tutorial
+      content3: sample application.
+      sign_up: Sign up now!
+      rails_logo: Rails logo
     help: 
-      help: "Help"
-      content1: "Get help on the Ruby on Rails Tutorial at the"
-      content2: "Rails Tutorial help section"
-      content3: "To get help on this sample app, see the"
+      help: Help
+      content1: Get help on the Ruby on Rails Tutorial at the
+      content2: Rails Tutorial help section
+      content3: To get help on this sample app, see the
       content4: "Ruby on Rails Tutorial "
-      content5: "book."
+      content5: book.
     about:
-      about: "About"
+      about: About
       content1: "The "
-      content2: "Ruby on Rails Tutorial"
-      content3: "part of the"
-      content4: "Learn Enough"
-      content5: "family of tutorials, is a"
+      content2: Ruby on Rails Tutorial
+      content3: part of the
+      content4: Learn Enough
+      content5: family of tutorials, is a
       content6: "book "
-      content7: "and"
+      content7: and
       content8: "screencast series "
       content9: "to teach web development with "
-      content10: "Ruby on Rails"
-      content11: ". This is the sample app for the tutorial."
+      content10: Ruby on Rails
+      content11: . This is the sample app for the tutorial.
     contact:
-      contact: "Contact"
+      contact: Contact
       content1: Contact the Ruby on Rails Tutorial about the sample app at the
-      content2: "contact page."
+      content2: contact page.
   users:
+    id_unexist: The id unexist!
+    please_log_in: Please log in
+    not_allow: you are not allowed
     new:
-      sign_up: "Sign Up"
-      content_sign_up: "This will be a signup page for new users."
-      create_my_account: "Create my account"
-    show:
-      id_unexist: "The id unexist!"
+      sign_up: Sign Up
+      content_sign_up: This will be a signup page for new users.
+      create_my_account: Create my account
     create:
-      welcome_user: "Welcome to the Sample App!"
+      welcome_user: Welcome to the Sample App!
+    update:
+      profile_updated: Profile updated
+    user:
+      you_sure?: You sure?
+      delete: Delete
+    destroy:
+      user_deleted: User deleted
+      user_delete_fail: User delete fail
+    index:
+      all_users: All users
+    edit:
+      edit_user: Edit user
+      update_your_profile: Update your profile
+      change: Change
+  will_paginate:
+    next_label: Next Page
+    previous_label: Previous Page
   shared:
     error_messages:
-      error: "error"
-      content_error: "The form contains"
+      error: error
+      content_error: The form contains
   sessions:
     new:
       sign_up: Sign up now!
@@ -74,16 +92,14 @@ en:
       new_user: New User
       remember_text: Remember me on this computer
     create:
-      invalid_credentials: Invalid email/password combination
+      invalid_credentials: Invalid email/password combination!
   helpers:
     label:
       user:
         password_confirmation: Confirmation
-      session:
-        email: Email
-        password: Pasword
     submit:
       user:
         create: Create my account
+        update: Save changes
       session:
         submit: Log in

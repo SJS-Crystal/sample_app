@@ -4,14 +4,14 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    if @user&.authenticate(params[:session][:password])
+    if @user&.authenticate params[:session][:password]
       log_in @user
       if params[:session][:remember_me] == Settings.remember_value
-        remember(@user)
+        remember @user
       else
-        forget(@user)
+        forget @user
       end
-      redirect_to @user
+      redirect_back_or @user
     else
       flash.now[:danger] = t ".invalid_credentials"
       render :new
