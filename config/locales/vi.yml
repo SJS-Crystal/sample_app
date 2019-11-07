@@ -30,6 +30,7 @@ vi:
       content3: " ứng dụng đơn giản."
       sign_up: Đăng kí ngay!
       rails_logo: Rails logo
+      micropost_feed: Micropost Feed
     help:
       help: Trợ giúp
       content1: "Nhận trợ giúp Ruby on Rails Tutorial tại "
@@ -60,6 +61,8 @@ vi:
     id_unexist: ID không tồn tại!
     please_log_in: Vui lòng đăng nhập
     not_allow: Bạn không được phép
+    show:
+      micropost: Bài viết
     new:
       sign_up: Đăng kí
       content_sign_up: Đây là trang đăng kí cho người dùng mới.
@@ -89,8 +92,13 @@ vi:
     previous_label: Trang trước
   shared:
     error_messages:
-      error: lỗi
+      error: "%{count} lỗi"
       content_error: Biểu mẫu chứa
+    micropost_form:
+      placeholder_new_post: Tạo micropost mới...
+    user_info:
+      view_my_profile: Vào hồ sơ của tớ
+      micropost: "%{count} bài viết"
   sessions:
     new:
       sign_up: Đăng kí ngay!
@@ -115,6 +123,19 @@ vi:
       reset_password: Thiết lập lại mật khẩu
     new:
       forgot_password: Quên mật khẩu
+    email_address_not_found: Địa chỉ email chưa được đăng kí!
+  microposts:
+    micropost:
+      posted: Đã đăng cách đây
+      ago: .
+      delete_linkto: Xóa
+      confirm_delete: Bạn có chắc muốn xóa không?
+    create:
+      micropost_created: Micropost đã được tạo!
+    destroy:
+      micropost_deleted: Micropost đã được xóa!
+      micropost_delete_fail: Micropost xóa không được nhé!
+      not_allow: Bạn không được phép
   helpers:
     label:
       user:
@@ -133,6 +154,8 @@ vi:
         submit: Đăng nhập
       password_reset:
         submit: Tiếp tục
+      micropost:
+        create: Đăng luôn
   user_mailer:
     account_activation_subject: Kích hoạt tài khoản
     account_activation:
@@ -156,10 +179,14 @@ vi:
         email: Email
         password: Mật khẩu
         password_confirmation: Xác nhận mật khẩu
+      micropost:
+        picture: Ảnh
+        content: Nội dung
     errors:
       models:
         user:
           attributes:
             name:
               blank: không thể để trắng
-  email_address_not_found: Địa chỉ email chưa được đăng kí!
+  oversize_upload_picture: nên nhỏ hơn 5MB
+  oversize_upload: Dung lượng tệp tải lên tối đa 5MB. Vui lòng chọn tệp nhỏ hơn

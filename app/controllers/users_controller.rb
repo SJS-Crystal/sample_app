@@ -5,10 +5,13 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.paginate page: params[:page], per_page: Settings.per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.order_desc.paginate page: params[:page],
+      per_page: Settings.per_page
+  end
 
   def new
     @user = User.new
@@ -48,8 +51,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit :name, :email, :password,
-                                 :password_confirmation
+    params.require(:user).permit User::DATA_TYPE_USERS
   end
 
   def load_user
@@ -58,14 +60,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t ".id_unexist"
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".please_log_in"
-    redirect_to login_path
   end
 
   def correct_user
