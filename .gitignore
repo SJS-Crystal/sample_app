@@ -41,3 +41,5 @@ config/environments/*.local.yml
 # Ignore test folder
 /test
 /.vscode
+/db/seeds.rb
+/public/uploads

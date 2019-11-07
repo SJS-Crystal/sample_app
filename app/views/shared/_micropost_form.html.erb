@@ -1,0 +1,11 @@
+<%= form_for @micropost do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: t(".placeholder_new_post") %>
+  </div>
+  <%= f.submit class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :picture, accept: Settings.accept_file_upload %>
+  </span>
+<% end %>
+<%= yield :validate_image %>

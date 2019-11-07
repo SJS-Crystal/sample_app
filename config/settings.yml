@@ -25,3 +25,9 @@ domain_email_faker: railstutorial.org
 password_customer_faker: password
 host: localhost:3000
 timeout_reset_password: 2
+max_content_post: 140
+size_upload_picture: 5
+size_avatar_post: 50
+accept_file_upload: image/jpeg,image/gif,image/png
+size_image: [400, 400]
+per_page: 10

@@ -6,6 +6,7 @@ gem "bcrypt", "3.1.13"
 gem "bootsnap", "1.4.4", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave", "1.2.2"
 gem "config"
 gem "faker", "2.1.2"
 gem "image_processing", "1.9.3"
@@ -47,6 +48,7 @@ group :test do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg", "1.1.4"
 end
 
