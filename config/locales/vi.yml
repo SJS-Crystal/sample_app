@@ -65,6 +65,8 @@ vi:
       content_sign_up: Đây là trang đăng kí cho người dùng mới.
     create:
       welcome_user: Chào mừng đến với Sample App!
+      please_check_mail: Vui lòng kiểm tra email của bạn để kích hoạt tài 
+        khoản của bạn.
     update:
       profile_updated: Hồ sơ đã được cập nhật
     user:
@@ -79,6 +81,9 @@ vi:
       edit_user: Chỉnh sửa người dùng
       update_your_profile: Cập nhật hồ sơ của bạn
       change: Đổi thay
+  account_activations:
+    account_activated: Tài khoản đã kích hoạt thành công!
+    invalid_activation_link: Link kích hoạt không hợp lệ!
   will_paginate:
     next_label: Trang sau
     previous_label: Trang trước
@@ -104,6 +109,8 @@ vi:
       remember_text: Duy trì trạng thái đăng nhập
     create:
       invalid_credentials: Email hoặc mật khẩu không đúng!
+      check_your_email: Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email
+        để kích hoạt tài khoản của bạn.
   helpers:
     label:
       user:
@@ -120,3 +127,11 @@ vi:
         update: Lưu thay đổi
       session:
         submit: Đăng nhập
+  user_mailer:
+    account_activation: Kích hoạt tài khoản
+    account_activation:
+      greeting: Chào
+      content_mail: "Chào mừng đến với Sample App! Nhấn vào link dưới để
+        kích hoạt tài khoản của bạn: "
+      content_h1_mail: Sample App
+      activate: Kích hoạt

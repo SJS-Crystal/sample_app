@@ -5,13 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     if @user&.authenticate params[:session][:password]
-      log_in @user
-      if params[:session][:remember_me] == Settings.remember_value
-        remember @user
-      else
-        forget @user
-      end
-      redirect_back_or @user
+      check_activated
     else
       flash.now[:danger] = t ".invalid_credentials"
       render :new
@@ -27,5 +21,21 @@ class SessionsController < ApplicationController
 
   def load_user
     @user = User.find_by email: params[:session][:email].downcase
+  end
+
+  def check_activated
+    if @user.activated?
+      log_in @user
+      if params[:session][:remember_me] == Settings.remember_value
+        remember @user
+      else
+        forget @user
+      end
+      redirect_back_or @user
+    else
+      message = t ".check_your_email"
+      flash[:warning] = message
+      redirect_to root_url
+    end
   end
 end
