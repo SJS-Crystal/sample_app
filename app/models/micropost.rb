@@ -2,8 +2,8 @@ class Micropost < ApplicationRecord
   DATA_TYPE = %i(content picture).freeze
   belongs_to :user
   delegate :name, to: :user, prefix: true
-  scope :order_desc, ->{order created_at: :desc}
   has_one_attached :picture
+  scope :order_desc, ->{order created_at: :desc}
   validates :user_id, presence: true
   validates :content, presence: true,
     length: {maximum: Settings.max_content_post}
