@@ -3,6 +3,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include SessionsHelper
 
+  def not_found
+    render file: Rails.root.join("public", "404.html"),
+      status: :not_found, layout: false
+    logger.info "Rendering 404"
+  end
+
   private
 
   def logged_in_user
