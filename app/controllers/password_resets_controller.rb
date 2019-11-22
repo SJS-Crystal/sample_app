@@ -35,14 +35,14 @@ class PasswordResetsController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit :password, :password_confirmation
+    params.require(:user).permit User::DATA_TYPE_RESETS_PASSWORD
   end
 
   def get_user
     @user = User.find_by email: params[:email].downcase
-    return $user if @user
+    return if @user
 
-    flash.now[:danger] = I18n.t ".email_address_not_found"
+    flash.now[:danger] = t ".email_address_not_found"
     render :new
   end
 

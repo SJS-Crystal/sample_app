@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  DATA_TYPE_USERS = %i(name email password password_confirmation).freeze
+  DATA_TYPE_RESETS_PASSWORD = %i(password password_confirmation).freeze
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save{email.downcase!}
   before_create :create_activation_digest

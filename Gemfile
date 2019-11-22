@@ -11,7 +11,6 @@ gem "faker", "2.1.2"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "2.9.1"
 gem "jquery-rails"
-gem "mini_magick", "4.9.5"
 gem "puma", "3.12.1"
 gem "rails", "6.0.0"
 gem "rails-i18n"
@@ -47,6 +46,7 @@ group :test do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg", "1.1.4"
 end
 
