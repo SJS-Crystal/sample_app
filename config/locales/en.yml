@@ -59,6 +59,13 @@ en:
     id_unexist: The id unexist!
     please_log_in: Please log in
     not_allow: you are not allowed
+    show_follow:
+      view_my_profile: View profile
+      micropost: Micropost
+    unfollow:
+      unfollow: Unfollow
+    follow:
+      follow: Follow
     show:
       micropost: micropost
     new:
@@ -82,6 +89,11 @@ en:
       edit_user: Edit user
       update_your_profile: Update your profile
       change: Change
+    follows:
+      followers:
+        followers: Followers
+      following:
+        following: Following
   account_activations:
     account_activated: Account activated!
     invalid_activation_link: Invalid activation link!
@@ -101,6 +113,9 @@ en:
       micropost:
         one: "%{count} micropost"
         other: "%{count} microposts"
+    stats:
+      followers: Followers
+      following: Following
   sessions:
     new:
       sign_up: Sign up now!
@@ -138,6 +153,12 @@ en:
       micropost_deleted: Micropost deleted!
       micropost_delete_fail: Micropost deleted unsuccessfully!
       not_allow: you are not allowed
+  relationships:
+    create:
+      error_user_ajax: User not found!
+    destroy:
+      error_user_ajax: User not found!
+      not_found: Not found relationship's id!
   helpers:
     label:
       user:

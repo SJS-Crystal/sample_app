@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
     root "static_pages#home"
-    
+
     get "/password_resets/new", to: "password_resets#new"
     get "/password_resets/edit", to: "password_resets#edit"
     get "/home", to: "static_pages#home"
@@ -13,9 +13,14 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
-    resources :users
+    resources :users do
+      member do
+        get :following, :followers, controller: "users/follows"
+      end
+    end
     resources :account_activations, only: :edit
     resources :password_resets, only: [:new, :create, :edit, :update]
     resources :microposts, only: [:create, :destroy]
+    resources :relationships, only: [:create, :destroy]
   end
 end

@@ -83,6 +83,10 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    carrierwave (1.2.2)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
     childprocess (1.0.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
@@ -509,6 +513,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 1.0.0)
   byebug (= 11.0.1)
   capybara (= 3.28.0)
+  carrierwave (= 1.2.2)
   config
   faker (= 2.1.2)
   fog (= 1.42)
